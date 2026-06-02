@@ -1,0 +1,339 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <title>Arko Dey</title>
+    <style>
+        body {
+            background-color: #003cff;
+            text-align: center;
+        }
+        h1 {
+            background-color: rgb(253, 253, 253);
+            border-radius: 30px;
+            padding: 10px 30px;
+            margin-top: 20px;
+            color: #003cff
+            
+        }
+        .t {
+            height: auto ; 
+            width: 95%;
+            max-width: 95%;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: aqua;
+            background: linear-gradient(45deg, #032db6, #eb6272, #06e6d3, #5d00a0);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            margin: 10px;
+            
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+               }
+            50% {
+                background-position: 100% 50%;
+                }
+            100% {
+                background-position: 0% 50%;
+                 }
+        }
+        .table{
+            background-color: white;
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            height: 250px;
+                
+        }
+        .table th, table td {
+            border: 1.5px solid rgb(0, 27, 146);
+            text-align: center;
+            height: auto;
+            width: 20px;
+            
+        } 
+        .table th {
+            background-color: #a0b2ee;
+            font-size: 20px;
+            padding: 10px;
+            color: rgb(0, 42, 78);
+        }
+        .input {
+            border: none;
+            outline: none;
+            text-align: center;
+            font-size: 18px;
+            height: 100%;
+            width: 100%;
+            
+        }
+        .table td {
+            font-size: 20px;
+            padding: 10px;
+        }
+        .output {
+            color: red;
+            font-size: 20px;
+        }
+        .ali {
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+            width: 95%;
+            max-width: 95%;
+            padding-top: 20px;
+            padding-left: 38px;
+            gap: 20px;
+            margin: 10px;
+            border-radius: 25px;
+
+        }
+        .oldiv {
+            max-width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center ;
+            text-align: left;
+            color: white;
+            overflow: hidden;
+        }
+        .ol {
+            
+            height: auto;
+            width: 45%;
+            max-width: 100%;
+            padding: 5px;
+            border-radius: 25px;
+            background: linear-gradient(-45deg, #032db6, #eb6272, #53a09a, #5d00a0);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            
+        }
+        ol {
+            margin-top: 5px;
+
+        }
+        .ul{
+            height: auto;
+            width: 45%;
+            max-width: 100%;
+            padding: 5px;
+            border-radius: 25px;
+            background: linear-gradient(-45deg, #032db6, #eb6272, #53a09a, #5d00a0);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            color: white;
+        }
+        li {
+            font-size: 30px;
+            text-align: left;
+            margin-top: 30px;
+        }
+        .vl {
+            border-left: 2px solid white;
+            width: 0px;
+            max-width: 0px;
+            height: 240px;
+            margin-left: 4px;
+            margin-top: 30px;
+            
+        }
+        @media screen and (max-width: 839px) {
+            .vl {
+            display: none;
+            }
+            .oldiv {
+                flex-direction: column;
+                align-content: center;
+
+            }
+            .ali {
+                flex-direction: column;
+                width: 100%;
+                
+            }
+            .ol {
+                width: 94%;
+            }
+            .ul {
+                width: 94%;
+            }
+             li {
+                margin: 0px;
+            }
+            
+        }
+        @media screen and (max-width: 768px) {
+            .t {
+                width: ;
+                height: auto;
+                overflow-block: auto ;
+            }
+            table {
+                overflow: hidden;
+                overflow-block: auto;
+            }
+            .table th {
+                font-size: 14px;
+            }
+            .input {
+                font-size: 12px;
+            }
+            .table td {
+                font-size: 14px;
+            }
+            .output {
+                font-size: 14px;
+            }
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    
+        <div class="t">
+            <h1>table</h1>
+            <table border="1" class="table">
+            <tr>
+            <th>Sl.No</th>
+            <th>SUB</th>
+            <th>TOTAL NUMBER </th>
+            <th>ENTER NUMBER </th>
+            <th>GRADE</th>
+            </tr> 
+            <tr>
+                <td>1</td>
+                <td>Bengali</td>
+                <td>100</td>
+                <td><input type="number" class="input" oninput="Grade(this)"></td>
+                <td class="output"></td>            
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>English</td>
+                <td>100</td>
+                <td><input type="number" class="input" oninput="Grade(this)"></td>
+                <td class="output"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Math</td>
+                <td>100</td>
+                <td><input type="number" class="input" oninput="Grade(this)"></td>
+                <td class="output"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>History</td>
+                <td>100</td>
+                <td><input type="number" class="input" oninput="Grade(this)"></td>
+                <td class="output"></td>
+
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Physics</td>
+                <td>100</td>
+                <td><input type="number" class="input" oninput="Grade(this)"></td>
+                <td class="output"></td>
+
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Chemistry</td>
+                <td>100</td>
+                <td><input type="number" class="input" oninput="Grade(this)"></td>
+                <td class="output"></td>
+
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Biology</td>
+                <td>100</td>
+                <td><input type="number" class="input" oninput="Grade(this)"></td>
+                <td class="output"></td>
+
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Geography</td>
+                <td>100</td>
+                <td><input type="number" class="input" oninput="Grade(this)"></td>
+                <td class="output"></td>
+
+            </tr>
+
+            </table>    
+        </div>
+        <div class="ali">
+            <div class="ol">
+                <h1>Ordered List</h1>
+                <div class="oldiv">
+                    <ol>
+                        <li>Bengali</li>
+                        <li>English</li>
+                        <li>Math</li>
+                        <li>History</li>
+                    </ol>
+                    <div class="vl"></div>
+                    <ol start="5">
+                        <li>Physics</li>
+                        <li>Chemistry</li>
+                        <li>Biology</li>
+                        <li>Geography</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="ul">
+                <h1>Unordered List</h1>
+                <ul>
+                    <li>Enter your received number in the Enter Number field.</li>
+                    <li>The grade obtained will be automatically calculated.</li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            function Grade(inputElement) {
+                let marks = parseFloat(inputElement.value);
+                let gradeBox = inputElement.closest('tr').querySelector('.output');
+
+                if (isNaN(marks)) {
+                    gradeBox.innerText = "";
+                    return;
+                }
+
+                if (marks >= 90) {
+                    gradeBox.innerText = "AA";
+                } else if (marks >= 80) {
+                    gradeBox.innerText = "A+";
+                } else if (marks >= 60) {
+                 gradeBox.innerText = "A";
+                } else if (marks >= 45) {
+                 gradeBox.innerText = "B";
+                } else if (marks >= 30) {
+                 gradeBox.innerText = "C";
+                } else {
+                 gradeBox.innerText = "Fail";
+                }
+            }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
