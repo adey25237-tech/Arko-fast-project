@@ -337,17 +337,28 @@
                 // Individual Grade Logic
                 if (marks >= 90) {
                     gradeBox.innerText = "AA";
-                    gradeBox.style.color = "green";
+                    gradeBox.style.color = "white";
+                    gradeBox.style.backgroundColor = "green";
                 } else if (marks >= 80) {
                     gradeBox.innerText = "A+";
+                    gradeBox.style.color = "white";
+                    gradeBox.style.backgroundColor = "green";
                 } else if (marks >= 60) {
                     gradeBox.innerText = "A";
+                    gradeBox.style.color = "white";
+                    gradeBox.style.backgroundColor = "green";
                 } else if (marks >= 45) {
                     gradeBox.innerText = "B";
+                    gradeBox.style.color = "white";
+                    gradeBox.style.backgroundColor = "orange";
                 } else if (marks >= 30) {
                     gradeBox.innerText = "C";
+                    gradeBox.style.color = "white";
+                    gradeBox.style.backgroundColor = "orange";
                 } else {
                     gradeBox.innerText = "Fail";
+                    gradeBox.style.color = "white";
+                    gradeBox.style.backgroundColor = "red";
                 }
 
                 // Since it's out of 100, marks = percentage
@@ -385,17 +396,28 @@
                     // Overall Grade Logic based on final percentage
                     if (percentage >= 90) {
                         totalGradeBox.innerText = "AA";
-                        totalGradeBox.style.color = "green";
+                        totalGradeBox.style.backgroundColor = "green";
+                        totalGradeBox.style.color = "white";
                     } else if (percentage >= 80) {
                         totalGradeBox.innerText = "A+";
+                        totalGradeBox.style.backgroundColor = "green";
+                        totalGradeBox.style.color = "white";
                     } else if (percentage >= 60) {
                         totalGradeBox.innerText = "A";
+                        totalGradeBox.style.backgroundColor = "green";
+                        totalGradeBox.style.color = "white";
                     } else if (percentage >= 45) {
                         totalGradeBox.innerText = "B";
+                        totalGradeBox.style.backgroundColor = "orange";
+                        totalGradeBox.style.color = "white";
                     } else if (percentage >= 30) {
                         totalGradeBox.innerText = "C";
+                        totalGradeBox.style.backgroundColor = "orange";
+                        totalGradeBox.style.color = "white";
                     } else {
                         totalGradeBox.innerText = "Fail";
+                        totalGradeBox.style.backgroundColor = "red";
+                        totalGradeBox.style.color = "white";
                     }
                 } else {
                     // Reset if all inputs are cleared
