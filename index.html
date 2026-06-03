@@ -1,207 +1,207 @@
 <!DOCTYPE html >
 <html lang="en">
-<head>
+    <head>
     <title>Arko Dey</title>
-    <style>
-        body {
-            background-color: #003cff;
-            text-align: center;
-        }
-        h1 {
-            background-color: rgb(253, 253, 253);
-            border-radius: 30px;
-            padding: 10px 30px;
-            margin-top: 20px;
-            color: #003cff
-            
-        }
-        .t {
-            height: auto ; 
-            width: 95%;
-            max-width: 95%;
-            padding: 20px;
-            border-radius: 20px;
-            background-color: aqua;
-            background: linear-gradient(45deg, #032db6, #eb6272, #06e6d3, #5d00a0);
-            background-size: 400% 400%;
-            animation: gradient 10s ease infinite;
-            margin: 10px;
-            
-        }
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-               }
-            50% {
-                background-position: 100% 50%;
-                }
-            100% {
-                background-position: 0% 50%;
-                 }
-        }
-        .table{
-            background-color: white;
-            margin: 20px auto;
-            border-collapse: collapse;
-            width: 80%;
-            height: 250px;
-                
-        }
-        .table th, table td {
-            border: 1.5px solid rgb(0, 27, 146);
-            text-align: center;
-            height: auto;
-            width: 20px;
-            
-        } 
-        .table th {
-            background-color: #a0b2ee;
-            font-size: 20px;
-            padding: 10px;
-            color: rgb(0, 42, 78);
-        }
-        .input {
-            border: none;
-            outline: none;
-            text-align: center;
-            font-size: 18px;
-            height: 100%;
-            width: 100%;
-            
-        }
-        .table td {
-            font-size: 20px;
-            padding: 10px;
-        }
-        .output {
-            color: red;
-            font-size: 20px;
-        }
-        .ali {
-            display: flex;
-            flex-wrap: wrap;
-            height: auto;
-            width: 95%;
-            max-width: 95%;
-            padding-top: 20px;
-            padding-left: 38px;
-            gap: 20px;
-            margin: 10px;
-            border-radius: 25px;
-
-        }
-        .oldiv {
-            max-width: 100%;
-            height: auto;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 9px;
-            font-size: 30px;
-            font-weight: bold;
-            text-align: center;
-            justify-content: center ;
-            text-align: left;
-            color: white;
-            overflow: hidden;
-        }
-        .ol {
-            
-            height: auto;
-            width: 45%;
-            max-width: 100%;
-            padding: 5px;
-            border-radius: 25px;
-            background: linear-gradient(-45deg, #032db6, #eb6272, #53a09a, #5d00a0);
-            background-size: 400% 400%;
-            animation: gradient 10s ease infinite;
-            
-        }
-        ol {
-            margin-top: 5px;
-
-        }
-        .ul{
-            height: auto;
-            width: 45%;
-            max-width: 100%;
-            padding: 5px;
-            border-radius: 25px;
-            background: linear-gradient(-45deg, #032db6, #eb6272, #53a09a, #5d00a0);
-            background-size: 400% 400%;
-            animation: gradient 10s ease infinite;
-            color: white;
-        }
-        li {
-            font-size: 30px;
-            text-align: left;
-            margin-top: 30px;
-        }
-        .vl {
-            border-left: 2px solid white;
-            width: 0px;
-            max-width: 0px;
-            height: 240px;
-            margin-left: 4px;
-            margin-top: 30px;
-            
-        }
-        @media screen and (max-width: 839px) {
-            .vl {
-            display: none;
+        <style>
+            body {
+                background-color: #003cff;
+                text-align: center;
             }
-            .oldiv {
-                flex-direction: column;
-                align-content: center;
-
-            }
-            .ali {
-                flex-direction: column;
-                width: 100%;
-                
-            }
-            .ol {
-                width: 94%;
-            }
-            .ul {
-                width: 94%;
-            }
-             li {
-                margin: 0px;
-            }
+            h1 {
+                background-color: rgb(253, 253, 253);
+                border-radius: 30px;
+                padding: 10px 30px;
+                margin-top: 20px;
+                color: #003cff
             
-        }
-        @media screen and (max-width: 768px) {
+            }
             .t {
-                width: ;
+                height: auto ; 
+                width: 95%;
+                max-width: 95%;
+                padding: 20px;
+                border-radius: 20px;
+                background-color: aqua;
+                background: linear-gradient(45deg, #032db6, #eb6272, #06e6d3, #5d00a0);
+                background-size: 400% 400%;
+                animation: gradient 10s ease infinite;
+                margin: 10px;
+            
+            }   
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                    }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+            .table{
+                background-color: white;
+                margin: 20px auto;
+                border-collapse: collapse;
+                width: 80%;
+                height: 250px;
+                
+            }
+            .table th, table td {
+                border: 1.5px solid rgb(0, 27, 146);
+                text-align: center;
                 height: auto;
-                overflow-block: auto ;
-            }
-            table {
-                overflow: hidden;
-                overflow-block: auto;
-            }
+                width: 20px;
+            
+            } 
             .table th {
-                font-size: 14px;
+                background-color: #a0b2ee;
+                font-size: 20px;
+                padding: 10px;
+                color: rgb(0, 42, 78);
             }
             .input {
-                font-size: 12px;
+                border: none;
+                outline: none;
+                text-align: center;
+                font-size: 18px;
+                height: 100%;
+                width: 100%;
+            
             }
             .table td {
-                font-size: 14px;
+                font-size: 20px;
+                padding: 10px;
             }
             .output {
-                font-size: 14px;
+                color: red;
+                font-size: 20px;
             }
-        }
+            .ali {
+                display: flex;
+                flex-wrap: wrap;
+                height: auto;
+                width: 95%;
+                max-width: 95%;
+                padding-top: 20px;
+                padding-left: 38px;
+                gap: 20px;
+                margin: 10px;
+                border-radius: 25px;
+
+            }
+            .oldiv {
+                max-width: 100%;
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 9px;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                justify-content: center ;
+                text-align: left;
+                color: white;
+                overflow: hidden;
+            }
+            .ol {
+            
+                height: auto;
+                width: 45%;
+                max-width: 100%;
+                padding: 5px;
+                border-radius: 25px;
+                background: linear-gradient(-45deg, #032db6, #eb6272, #53a09a, #5d00a0);
+                background-size: 400% 400%;
+                animation: gradient 10s ease infinite;
+            
+            }
+            ol {
+                margin-top: 5px;
+
+            }
+            .ul{
+                height: auto;
+                width: 45%;
+                max-width: 100%;
+                padding: 5px;
+                border-radius: 25px;
+                background: linear-gradient(-45deg, #032db6, #eb6272, #53a09a, #5d00a0);
+                background-size: 400% 400%;
+                animation: gradient 10s ease infinite;
+                color: white;
+            }
+            li {
+                font-size: 30px;
+                text-align: left;
+                margin-top: 30px;
+            }
+            .vl {
+                border-left: 2px solid white;
+                width: 0px;
+                max-width: 0px;
+                height: 240px;
+                margin-left: 4px;
+                margin-top: 30px;
+            
+            }
+            @media screen and (max-width: 839px) {
+                .vl {
+                    display: none;
+                }
+                .oldiv {
+                    flex-direction: column;
+                    align-content: center;
+
+                }
+                .ali {
+                    flex-direction: column;
+                    width: 100%;
+                
+                }
+                .ol {
+                    width: 94%;
+                }
+                .ul {
+                    width: 94%;
+                }
+                li {
+                    margin: 0px;
+                }
+            
+            }
+            @media screen and (max-width: 768px) {
+                .t {
+                    height: auto;
+                    overflow-block: auto ;
+                }
+                table {
+                    overflow: hidden;
+                    overflow-block: auto;
+                }
+                .table th {
+                    font-size: 14px;
+                }
+                .input {
+                    font-size: 12px;
+                }
+                .table td {
+                    font-size: 14px;
+                }
+                .output {
+                    font-size: 14px;
+                }
+            }
 
         
         
-    </style>
-</head>
-<body>
+        </style>
+    
+    </head>
+    <body>
     
         <div class="t">
-            <h1>table</h1>
+            <h1>Mark Sheet</h1>
             <table border="1" class="table">
             <tr>
             <th>Sl.No</th>
@@ -209,13 +209,15 @@
             <th>TOTAL NUMBER </th>
             <th>ENTER NUMBER </th>
             <th>GRADE</th>
+            <th>PARSENT</th>
             </tr> 
             <tr>
                 <td>1</td>
                 <td>Bengali</td>
                 <td>100</td>
                 <td><input type="number" class="input" oninput="Grade(this)"></td>
-                <td class="output"></td>            
+                <td class="output"></td>  
+                <td class="percent"></td>         
             </tr>
             <tr>
                 <td>2</td>
@@ -223,6 +225,7 @@
                 <td>100</td>
                 <td><input type="number" class="input" oninput="Grade(this)"></td>
                 <td class="output"></td>
+                <td class="percent"></td>
             </tr>
             <tr>
                 <td>3</td>
@@ -230,6 +233,7 @@
                 <td>100</td>
                 <td><input type="number" class="input" oninput="Grade(this)"></td>
                 <td class="output"></td>
+                <td class="percent"></td>
             </tr>
             <tr>
                 <td>4</td>
@@ -237,7 +241,7 @@
                 <td>100</td>
                 <td><input type="number" class="input" oninput="Grade(this)"></td>
                 <td class="output"></td>
-
+                <td class="percent"></td>
             </tr>
             <tr>
                 <td>5</td>
@@ -245,7 +249,7 @@
                 <td>100</td>
                 <td><input type="number" class="input" oninput="Grade(this)"></td>
                 <td class="output"></td>
-
+                <td class="percent"></td>
             </tr>
             <tr>
                 <td>6</td>
@@ -253,7 +257,7 @@
                 <td>100</td>
                 <td><input type="number" class="input" oninput="Grade(this)"></td>
                 <td class="output"></td>
-
+                <td class="percent"></td>
             </tr>
             <tr>
                 <td>7</td>
@@ -261,7 +265,7 @@
                 <td>100</td>
                 <td><input type="number" class="input" oninput="Grade(this)"></td>
                 <td class="output"></td>
-
+                <td class="percent"></td>
             </tr>
             <tr>
                 <td>8</td>
@@ -269,7 +273,14 @@
                 <td>100</td>
                 <td><input type="number" class="input" oninput="Grade(this)"></td>
                 <td class="output"></td>
-
+                <td class="percent"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: #aeffd6;">TOTAL</td>
+                <td style="background-color: #aeffd6;">800</td>
+                <td id="total-entered" style="background-color: #aeffd6;"></td>
+                <td id="total-grade" class="output" style="background-color: #aeffd6;"></td>
+                <td id="total-percent" style="background-color: #aeffd6;"></td>
             </tr>
 
             </table>    
@@ -298,42 +309,101 @@
                 <ul>
                     <li>Enter your received number in the Enter Number field.</li>
                     <li>The grade obtained will be automatically calculated.</li>
+                    <li>The overall total and percentage will update instantly.</li>
                 </ul>
             </div>
         </div>
         <script>
             function Grade(inputElement) {
                 let marks = parseFloat(inputElement.value);
-                let gradeBox = inputElement.closest('tr').querySelector('.output');
+                let row = inputElement.closest('tr');
+                let gradeBox = row.querySelector('.output');
+                let percentBox = row.querySelector('.percent');
 
-                if (isNaN(marks)) {
+                // Clear values if input is deleted or negative
+                if (isNaN(marks) || marks < 0) {
                     gradeBox.innerText = "";
+                    percentBox.innerText = "";
+                    calculateTotals();
                     return;
                 }
 
+                // Cap marks at 100 for safety
+                if (marks > 100) {
+                    marks = 100;
+                    inputElement.value = 100; 
+                }
+
+                // Individual Grade Logic
                 if (marks >= 90) {
                     gradeBox.innerText = "AA";
+                    gradeBox.style.color = "green";
                 } else if (marks >= 80) {
                     gradeBox.innerText = "A+";
                 } else if (marks >= 60) {
-                 gradeBox.innerText = "A";
+                    gradeBox.innerText = "A";
                 } else if (marks >= 45) {
-                 gradeBox.innerText = "B";
+                    gradeBox.innerText = "B";
                 } else if (marks >= 30) {
-                 gradeBox.innerText = "C";
+                    gradeBox.innerText = "C";
                 } else {
-                 gradeBox.innerText = "Fail";
+                    gradeBox.innerText = "Fail";
+                }
+
+                // Since it's out of 100, marks = percentage
+                percentBox.innerText = marks +"" + "%";
+            
+                // Trigger total calculation every time a number is entered
+                calculateTotals();
+            }
+
+
+            function calculateTotals() {
+                let inputs = document.querySelectorAll('.input');
+                let totalMarks = 0;
+                let subjectsEntered = 0;
+
+                // Loop through all inputs and add up the numbers
+                inputs.forEach(input => {
+                    let val = parseFloat(input.value);
+                    if (!isNaN(val)) {
+                    totalMarks += val;
+                    subjectsEntered++;
+                    }
+                });
+
+                // Display total number
+                document.getElementById('total-entered').innerText = totalMarks;
+            
+                let totalGradeBox = document.getElementById('total-grade');
+
+                // Only calculate percentage and final grade if at least one subject is entered
+                if (subjectsEntered > 0) {
+                    let percentage = (totalMarks / 800) * 100;
+                    document.getElementById('total-percent').innerText = percentage.toFixed(2) + "%";
+
+                    // Overall Grade Logic based on final percentage
+                    if (percentage >= 90) {
+                        totalGradeBox.innerText = "AA";
+                        totalGradeBox.style.color = "green";
+                    } else if (percentage >= 80) {
+                        totalGradeBox.innerText = "A+";
+                    } else if (percentage >= 60) {
+                        totalGradeBox.innerText = "A";
+                    } else if (percentage >= 45) {
+                        totalGradeBox.innerText = "B";
+                    } else if (percentage >= 30) {
+                        totalGradeBox.innerText = "C";
+                    } else {
+                        totalGradeBox.innerText = "Fail";
+                    }
+                } else {
+                    // Reset if all inputs are cleared
+                    document.getElementById('total-percent').innerText = "0%";
+                    totalGradeBox.innerText = "-";
                 }
             }
-    </script>
+            
+        </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
